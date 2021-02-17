@@ -20,7 +20,7 @@ module.exports = {
 			template: './src/index.hbs',
 			filename: 'index.html',
 			title: 'Processing | Mouse Interaction',
-			title: 'A simple example, just to get started',
+			description: 'A simple example, just to get started',
 		}),
 		// TODO: implement clean webpack plugin
 	],

@@ -9,13 +9,19 @@
     "build": "webpack --config weppack.prod.config.js",
     "build:dev": "webpack --config weppack.dev.config.js"
   },
+  "dependencies": {
+    "p5": "^1.2.0"
+  },
   "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "~3.0.0",
     "handlebars": "~4.7.7",
     "handlebars-loader": "~1.7.1",
     "html-webpack-plugin": "~5.1.0",
     "webpack": "~5.21.2",
     "webpack-cli": "~4.5.0",
-    "webpack-dev-server": "~3.11.2"
+    "webpack-dev-server": "^3.11.2"
   }
 }
