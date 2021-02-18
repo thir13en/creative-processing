@@ -1,13 +1,10 @@
-function setup() {
-  createCanvas(600, 400);
+import * as p5 from 'p5';
+
+let s = (sk) => {    
+	sk.setup = () =>{
+	    sk.createCanvas(window.innerWidth,window.innerHeight);
+	    sk.background(40);
+	}
 }
 
-function draw() {
-  background(250, 250, 100);
-
-  fill(250, 200, 200);
-  ellipse(mouseX, mouseY, 100, 100);
-
-  fill(200, 250, 200);
-  rect(400, 100, 50, 50);
-}
+const P5 = new p5(s);
