@@ -1,6 +1,7 @@
-import * as p5 from 'p5';
+import * as P5 from 'p5';
+import styles from './style.scss';
 
-let s = (sk) => {    
+let sketch = (sk) => {
 	sk.setup = () =>{
 		sk.createCanvas(window.innerWidth,window.innerHeight);
 		sk.background(40);
@@ -9,4 +10,4 @@ let s = (sk) => {
 	}
 }
 
-const P5 = new p5(s);
+const p5 = new P5(sketch);
